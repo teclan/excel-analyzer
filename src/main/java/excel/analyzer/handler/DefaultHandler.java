@@ -20,7 +20,7 @@ public class DefaultHandler implements Handler {
 			
 			if(Objects.isNotNullString(value)) {
 				LOGGER.info("{}:坐标:({},{})",value,rowIndex+1,i+1);
-				FileUtils.randomWrite2File(outFileName, String.format("(%s(%s,%s))\n\r", value,rowIndex+1,i+1));
+				FileUtils.randomWrite2File(outFileName, String.format("%s		%s		%s\n", value,rowIndex+1,i+1));
 			}
 			
 		}

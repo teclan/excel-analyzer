@@ -46,7 +46,7 @@ public class ExcelUtils {
 
 				for (int i = 0; i <= LastRow; i++) {
 					Row row = sheet.getRow(i);
-					handler.handle(file.getName().substring(0, file.getName().lastIndexOf("."))+".txt",i, row);
+					handler.handle("out/"+file.getName().substring(0, file.getName().lastIndexOf("."))+".txt",i, row);
 				}
 			}
 		} catch (Exception e) {
